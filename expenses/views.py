@@ -46,6 +46,10 @@ def delete(request, pk):
 
     expense = Expense.objects.get(id=pk)
 
+    if request.method == "POST":
+        expense.delete()
+        return redirect('/expenses')
+
     context = {
         'expense': expense
     }
