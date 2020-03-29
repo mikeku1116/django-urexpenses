@@ -2,7 +2,7 @@
 
 ## 專案介紹 ##
 
-本專案UrExpenses是一個記帳網站，透過Django ModelForm來進行開發，具有基本的CRUD(Create-Read-Update-delete)功能，可以搭配**[[Django教學7]透過Django ModelForm快速開發CRUD應用程式教學](https://www.learncodewithmike.com/2020/03/django-modelform.html)**部落格文章來進行學習。
+本專案UrExpenses是一個記帳網站，透過Django ModelForm來進行開發，具有基本的CRUD(Create-Read-Update-delete)功能，可以搭配[[Django教學7]透過Django ModelForm快速開發CRUD應用程式教學](https://www.learncodewithmike.com/2020/03/django-modelform.html)部落格文章來進行學習。
 
 ## 前置作業 ##
 
@@ -18,6 +18,6 @@
 
 ## 執行畫面 ##
 
-開啟瀏覽器，在本地端伺服器的網址後面加上<font color="#dd0000">/expenses</font>(例：http://127.0.0.1:8000/expenses/)後，即可看到首頁畫面。
+開啟瀏覽器，在本地端伺服器的網址後面加上 /expenses (例：http://127.0.0.1:8000/expenses/) 後，即可看到首頁畫面。
 
 ![Alt text](https://1.bp.blogspot.com/-SOg8L7Gtlwc/XoB7GRMS7pI/AAAAAAAABr8/Srgy1kxmhhANha9chc78Ii7Y7euDWm5ZQCKgBGAsYHg/s1600/UrExpenses.PNG "Optional title")
