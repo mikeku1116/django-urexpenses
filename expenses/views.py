@@ -40,3 +40,14 @@ def update(request, pk):
     }
 
     return render(request, 'expenses/update.html', context)
+
+
+def delete(request, pk):
+
+    expense = Expense.objects.get(id=pk)
+
+    context = {
+        'expense': expense
+    }
+
+    return render(request, 'expenses/delete.html', context)
