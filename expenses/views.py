@@ -1,7 +1,13 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .forms import ExpenseModelForm
 
 
 def index(request):
 
-    return HttpResponse("Hello Django")
+    form = ExpenseModelForm()
+
+    context = {
+        'form': form
+    }
+
+    return render(request, 'index.html', context)
