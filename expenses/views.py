@@ -24,9 +24,16 @@ def index(request):
 
 
 def update(request, pk):
+
     expense = Expense.objects.get(id=pk)
 
     form = ExpenseModelForm(instance=expense)
+
+    if request.method == 'POST':
+        form = ExpenseModelForm(request.POST, instance=expense)
+        if form.is_valid():
+            form.save()
+        return redirect('/expenses')
 
     context = {
         'form': form
