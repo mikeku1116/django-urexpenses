@@ -21,3 +21,15 @@ def index(request):
     }
 
     return render(request, 'expenses/index.html', context)
+
+
+def update(request, pk):
+    expense = Expense.objects.get(id=pk)
+
+    form = ExpenseModelForm(instance=expense)
+
+    context = {
+        'form': form
+    }
+
+    return render(request, 'expenses/update.html', context)
